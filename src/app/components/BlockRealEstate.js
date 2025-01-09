@@ -29,7 +29,7 @@ const BlockRealEstate = () => {
           {[...Array(4)].map((_, index) => (
             <div
               key={index}
-              className='backdrop-blur-sm bg-black/30 rounded-2xl p-8 text-center text-white'
+              className='backdrop-blur-xl bg-white/10 shadow-sm shadow-white/50 rounded-2xl p-8 text-center text-white'
             >
               <div className='text-3xl md:text-4xl font-bold mb-4'>
                 $10
