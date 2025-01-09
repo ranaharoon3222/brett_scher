@@ -1,6 +1,7 @@
 'use client';
 
 import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           {/* Logo and Social Section */}
           <div className='space-y-6'>
             <div className='bg-white text-primary px-4 py-2 rounded-md inline-block font-bold text-xl'>
-              LIFE
+              <Image src='/logo.jpeg' width={100} height={100} alt='Logo' />
             </div>
             <p className='text-sm opacity-80'>
               Sed ut unde omnis iste natus sit volur antium laudan
