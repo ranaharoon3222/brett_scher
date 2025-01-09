@@ -68,3 +68,18 @@
 body {
   font-family: 'Futura Cyrillic', sans-serif;
 }
+
+.splide__pagination__page {
+  background: #ccc !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.splide__pagination__page.is-active {
+  background: #143764 !important;
+  z-index: 1;
+  opacity: 1;
+}
+html .splide__pagination {
+  bottom: -0.5em;
+}

@@ -11,7 +11,7 @@ const BlockEngageWithMe = () => {
       className='relative bg-cover bg-center bg-no-repeat bg-black'
     >
       {/* Content Container */}
-      <Container className='relative  py-0'>
+      <Container className='relative  !py-0'>
         <div className='flex flex-col lg:flex-row items-center justify-between gap-12'>
           {/* Left Content */}
           <div className='max-w-2xl py-5 space-y-6 text-white'>

@@ -9,7 +9,7 @@ const BlockHero = () => {
       {/*<!-- Component: Two columns even layout --> */}
       <section>
         <Container className='container px-6 py-10 m-auto'>
-          <div className='grid grid-cols-4 items-center gap-6 md:grid-cols-8 lg:grid-cols-12'>
+          <div className=' pb-10 md:pb-0 grid grid-cols-4 items-center gap-6 md:grid-cols-8 lg:grid-cols-12'>
             <div className='col-span-4 lg:col-span-7 space-y-14'>
               <h1 className='text-8xl uppercase font-[900] max-w-[500px]'>
                 <span className='text-[#143764]'> Brett </span> scher
