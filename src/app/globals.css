@@ -2,20 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('/fonts/FuturaCyrillic-Bold.woff2') format('woff2'),
+    url('/fonts/FuturaCyrillic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Futura Cyrillic Book';
+  src: url('/fonts/FuturaCyrillicBook.woff2') format('woff2'),
+    url('/fonts/FuturaCyrillicBook.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic Demi';
+  src: url('/fonts/FuturaCyrillic-Demi.woff2') format('woff2'),
+    url('/fonts/FuturaCyrillic-Demi.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic Extra';
+  src: url('/fonts/FuturaCyrillic-ExtraBold.woff2') format('woff2'),
+    url('/fonts/FuturaCyrillic-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('/fonts/FuturaCyrillicHeavy.woff2') format('woff2'),
+    url('/fonts/FuturaCyrillicHeavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('/fonts/FuturaCyrillicLight.woff2') format('woff2'),
+    url('/fonts/FuturaCyrillicLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('/fonts/FuturaCyrillicMedium.woff2') format('woff2'),
+    url('/fonts/FuturaCyrillicMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Futura Cyrillic', sans-serif;
 }
