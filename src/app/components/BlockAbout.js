@@ -5,7 +5,7 @@ import Container from './Container';
 const BlockAbout = () => {
   return (
     <section className='relative bg-black text-white'>
-      <div className='relative -top-6'>
+      <div className='relative -top-6 md:-top-24'>
         <Image
           width={1920}
           height={600}
@@ -17,7 +17,7 @@ const BlockAbout = () => {
           <Image
             width={300}
             height={300}
-            className='z-30 max-w-[150px] md:max-w-[300px]  absolute -top-12 md:-top-24   left-1/2 transform -translate-x-1/2 rounded-full'
+            className='z-30 max-w-[150px] md:max-w-[300px]  absolute -top-12 md:-top-16   left-1/2 transform -translate-x-1/2 rounded-full'
             src='/profile-2.png'
             alt=''
           />
