@@ -19,7 +19,7 @@ const BlockRealEstate = () => {
   ];
 
   return (
-    <section className='relative py-16 md:py-28 md:pb-60'>
+    <section className='relative text-center py-16 md:py-28 md:pb-60'>
       {/* Background Image */}
       <div
         className='absolute inset-0 bg-cover bg-top bg-no-repeat'
@@ -31,11 +31,11 @@ const BlockRealEstate = () => {
       {/* Content */}
       <div className='relative z-10 container mx-auto px-4  pb-20'>
         <div className='max-w-4xl mx-auto text-center text-white space-y-6'>
-          <h1 className='text-6xl md:text-8xl font-bold leading-tight'>
-            Insurance <br /> Professional
+          <h1 className='text-5xl md:text-6xl font-bold leading-tight'>
+            Insurance Professional
           </h1>
-          <p className='text-center text-base'>
-            Serving New York and New Jersey
+          <p className='text-center text-lg'>
+            Serving New York and New Jersey.
           </p>
         </div>
 
@@ -54,6 +54,13 @@ const BlockRealEstate = () => {
             </div>
           ))}
         </div>
+        <a
+          target='_blank'
+          className='inline-block   bg-primary font-[500] mt-16 px-10  text-center hover:bg-primary/80 hover:text-white transition-all   border border-white rounded-full text-white py-4  uppercase'
+          href='https://971j2sm5lzf.typeform.com/to/pY9tLdLf?utm_source=website'
+        >
+          Let's chat!
+        </a>
       </div>
     </section>
   );

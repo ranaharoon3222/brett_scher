@@ -11,6 +11,10 @@ const Navbar = () => {
   const menuItems = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
+    {
+      label: 'Insurance ',
+      href: 'https://971j2sm5lzf.typeform.com/to/pY9tLdLf?utm_source=website',
+    },
     { label: 'Media', href: 'https://www.crtfd.co/' },
     { label: 'Contact us', href: '/contact' },
   ];
