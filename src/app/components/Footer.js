@@ -21,9 +21,7 @@ export default function Footer() {
             <div className=' text-primary relative -left-3  py-2  inline-block font-bold text-xl'>
               <Image src='/blg-logo.png' width={170} height={170} alt='Logo' />
             </div>
-            <p className='text-sm opacity-80'>
-              Sed ut unde omnis iste natus sit volur antium laudan
-            </p>
+            <p className='text-sm opacity-80'>Follow me!</p>
             <div className='flex gap-4'>
               <a
                 href='https://www.instagram.com/brettscherlife'
