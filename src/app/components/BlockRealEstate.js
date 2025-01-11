@@ -1,11 +1,11 @@
 const BlockRealEstate = () => {
   const data = [
     {
-      title: 'LIFE INSURANCE',
+      title: 'LIFE <br> INSURANCE',
       text: '',
     },
     {
-      title: 'EMPLOYEE BENEFITS',
+      title: 'EMPLOYEE <br> BENEFITS',
       text: '',
     },
     {
@@ -13,7 +13,7 @@ const BlockRealEstate = () => {
       text: '',
     },
     {
-      title: 'DISABILITY PLANS',
+      title: 'DISABILITY <br> PLANS',
       text: '',
     },
   ];
@@ -46,9 +46,10 @@ const BlockRealEstate = () => {
               key={index}
               className='backdrop-blur-xl bg-white/10 shadow-sm shadow-white/50 rounded-2xl p-8 text-center text-white'
             >
-              <div className='text-5xl md:text-4xl font-bold mb-4'>
-                {item.title}
-              </div>
+              <div
+                dangerouslySetInnerHTML={{ __html: item.title }}
+                className='text-4xl md:text-4xl font-bold mb-4'
+              ></div>
               {/* <p className='text-sm text-gray-300'>{item.text}</p> */}
             </div>
           ))}
