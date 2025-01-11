@@ -90,6 +90,7 @@ const BlockEngageWithMe = () => {
             <div className='group relative'>
               <div className='absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-300 rounded-lg  opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt'></div>
               <a
+                target='_blank'
                 href='https://www.instagram.com/brettscherlife'
                 className='relative flex items-center gap-4 px-8 py-6 bg-gray-900 rounded-lg leading-none'
               >
@@ -99,11 +100,11 @@ const BlockEngageWithMe = () => {
                 <div className='flex flex-col items-start'>
                   <span className='text-pink-400 font-medium'>Instagram</span>
                   <span className='text-2xl font-bold text-white'>
-                    @youraccount
+                    @Brettscherlife
                   </span>
-                  <span className='text-gray-400 text-sm'>
+                  {/* <span className='text-gray-400 text-sm'>
                     Join 50K+ followers
-                  </span>
+                  </span> */}
                 </div>
               </a>
             </div>
@@ -112,6 +113,7 @@ const BlockEngageWithMe = () => {
             <div className='group relative'>
               <div className='absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-primary rounded-lg  opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt'></div>
               <a
+                target='_blank'
                 href='https://www.linkedin.com/in/brettscher'
                 className='relative flex items-center gap-4 px-8 py-6 bg-gray-900 rounded-lg leading-none'
               >
@@ -121,9 +123,8 @@ const BlockEngageWithMe = () => {
                 <div className='flex flex-col items-start'>
                   <span className='text-blue-400 font-medium'>LinkedIn</span>
                   <span className='text-2xl font-bold text-white'>
-                    @youraccount
+                    Brett Scher
                   </span>
-                  <span className='text-gray-400 text-sm'>Connect with us</span>
                 </div>
               </a>
             </div>
