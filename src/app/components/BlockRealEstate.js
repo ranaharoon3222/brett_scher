@@ -31,11 +31,11 @@ const BlockRealEstate = () => {
       {/* Content */}
       <div className='relative z-10 container mx-auto px-4  pb-20'>
         <div className='max-w-4xl mx-auto text-center text-white space-y-6'>
-          <h1 className='text-4xl md:text-6xl font-bold leading-tight'>
+          <h1 className='text-6xl md:text-8xl font-bold leading-tight'>
             Insurance <br /> Professional
           </h1>
-          <p className='text-center text-lg'>
-            Serving New York and New Jersey in smaller font
+          <p className='text-center text-base'>
+            Serving New York and New Jersey
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const BlockRealEstate = () => {
               key={index}
               className='backdrop-blur-xl bg-white/10 shadow-sm shadow-white/50 rounded-2xl p-8 text-center text-white'
             >
-              <div className='text-3xl md:text-4xl font-bold mb-4'>
+              <div className='text-5xl md:text-4xl font-bold mb-4'>
                 {item.title}
               </div>
               {/* <p className='text-sm text-gray-300'>{item.text}</p> */}
