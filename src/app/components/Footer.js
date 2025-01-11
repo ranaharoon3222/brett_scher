@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <footer className='bg-primary text-white'>
-      <div className='container mx-auto px-4 py-16'>
+      <div className='container mx-auto px-4 py-3 md:py-16'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           {/* Logo and Social Section */}
           <div className='space-y-3'>
@@ -87,10 +87,10 @@ export default function Footer() {
           {/* Newsletter Section */}
           <div className='space-y-6'>
             <h2 className='text-xl font-semibold'>Newsletter</h2>
-            <p className='opacity-80'>
+            {/* <p className='opacity-80'>
               Sed ut unde omnis iste natus sit volur tatem accus antium laudan
               tium exceur sante.
-            </p>
+            </p> */}
             <form className='space-y-4' onSubmit={(e) => e.preventDefault()}>
               <div className='relative'>
                 <input
@@ -106,7 +106,7 @@ export default function Footer() {
                 Submit
               </button>
             </form>
-            <p className='text-sm opacity-60'>Beata vitae dicta explicabo.</p>
+            {/* <p className='text-sm opacity-60'>Beata vitae dicta explicabo.</p> */}
           </div>
         </div>
       </div>

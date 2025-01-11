@@ -62,7 +62,7 @@ const BlockAbout = () => {
                   alt='certified-logo'
                   width={300}
                   height={150}
-                  className='relative -left-5 w-auto'
+                  className='relative mx-auto md:mx-0 md:-left-5 w-auto'
                 />
                 <p className='text-lg leading-relaxed opacity-90'>
                   Certified Distribution is a cutting-edge, new age media
@@ -75,7 +75,7 @@ const BlockAbout = () => {
                   and drives growth.
                 </p>
                 <Link
-                  href={'/'}
+                  href={'https://www.crtfd.co/'}
                   className='bg-primary inline-block hover:bg-primary/90 text-white border-white border px-8 py-3 rounded-full transition-colors'
                 >
                   GET CRTFD

@@ -74,14 +74,14 @@ const BlockEngageWithMe = () => {
         <div className='max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8'>
           <div className='text-center mb-16'>
             <h2 className='text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-normal'>
-              Engage
+              Engage With
               <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary'>
-                With Brett scher
+                Brett Scher
               </span>
             </h2>
             <p className='max-w-2xl mx-auto text-xl text-gray-300'>
-              Join our thriving community of innovators and stay connected with
-              the latest updates and insights.
+              Follow along the daily journey and gain insight about what goes on
+              behind the scenes!
             </p>
           </div>
 

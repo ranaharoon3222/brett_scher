@@ -15,11 +15,10 @@ const BlockHero = () => {
                 <span className='text-[#143764]'> Brett </span> scher
               </h1>
               <p className='text-primary leading-7 text-xl max-w-[590px]'>
-                Brett Scher is an insurance professional, founder of Life with
-                Brett Scher., a practice specializing in life insurance,
-                employee benefits and more. He’s also an owner of Certified
-                Distribution, a media agency focused on producing new age social
-                media content.
+                Brett Scher is an insurance professional, Founder/CEO of Life
+                with Brett Scher., a new age insurance practice. He’s also an
+                owner of Certified Distribution, a media agency focused on
+                producing creative & engaging viral social media content.
               </p>
 
               <div className='flex flex-wrap items-center gap-4'>
