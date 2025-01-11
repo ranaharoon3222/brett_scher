@@ -43,10 +43,10 @@ export default function Footer() {
                 <div>
                   <div className='text-sm opacity-80'>SEND MAIL</div>
                   <a
-                    href='mailto:demo@section.express'
+                    href='mailto:me@brettscher.com'
                     className='hover:underline'
                   >
-                    demo@section.express
+                    me@brettscher.com
                   </a>
                 </div>
               </div>
@@ -54,8 +54,8 @@ export default function Footer() {
                 <Phone className='w-5 h-5 mt-1 opacity-80' />
                 <div>
                   <div className='text-sm opacity-80'>CALL US</div>
-                  <a href='tel:1-800-444-22555' className='hover:underline'>
-                    1-800-444-22555
+                  <a href='tel:631-704-3993' className='hover:underline'>
+                    631-704-3993
                   </a>
                 </div>
               </div>
