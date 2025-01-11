@@ -34,6 +34,9 @@ const BlockRealEstate = () => {
           <h1 className='text-4xl md:text-6xl font-bold leading-tight'>
             Insurance <br /> Professional
           </h1>
+          <p className='text-center text-lg'>
+            Serving New York and New Jersey in smaller font
+          </p>
         </div>
 
         {/* Statistics Grid */}
