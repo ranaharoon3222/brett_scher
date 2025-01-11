@@ -2,8 +2,16 @@
 
 import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
+  const menuItems = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Media', href: 'https://www.crtfd.co/' },
+    { label: 'Contact us', href: '/contact' },
+  ];
+
   return (
     <footer className='bg-primary text-white'>
       <div className='container mx-auto px-4 py-16'>
@@ -66,21 +74,14 @@ export default function Footer() {
           <div className='space-y-6'>
             <h2 className='text-xl font-semibold'>Our Pages</h2>
             <nav className='space-y-3'>
-              {[
-                'Homepage',
-                'About Us',
-                'Shopping',
-                'Team Members',
-                'Our Services',
-                'Contact',
-              ].map((page) => (
-                <a
-                  key={page}
-                  href='#'
+              {menuItems.map((page) => (
+                <Link
+                  key={page.label}
+                  href={page.href}
                   className='block hover:underline opacity-80 hover:opacity-100 transition-opacity'
                 >
-                  {page}
-                </a>
+                  {page.label}
+                </Link>
               ))}
             </nav>
           </div>

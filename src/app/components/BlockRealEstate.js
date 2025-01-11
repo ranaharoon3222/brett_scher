@@ -19,7 +19,7 @@ const BlockRealEstate = () => {
   ];
 
   return (
-    <section className='relative py-40 pb-60'>
+    <section className='relative py-16 md:py-28 md:pb-60'>
       {/* Background Image */}
       <div
         className='absolute inset-0 bg-cover bg-top bg-no-repeat'

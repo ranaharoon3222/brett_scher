@@ -11,8 +11,8 @@ const Navbar = () => {
   const menuItems = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'Media', href: 'https://www.crtfd.co/' },
+    { label: 'Contact us', href: '/contact' },
   ];
 
   return (
