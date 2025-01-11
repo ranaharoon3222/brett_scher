@@ -90,7 +90,7 @@ const BlockEngageWithMe = () => {
             <div className='group relative'>
               <div className='absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-300 rounded-lg  opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt'></div>
               <a
-                href='#'
+                href='https://www.instagram.com/brettscherlife'
                 className='relative flex items-center gap-4 px-8 py-6 bg-gray-900 rounded-lg leading-none'
               >
                 <div className='flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 p-0.5 transform group-hover:scale-110 transition-transform duration-200'>
@@ -112,7 +112,7 @@ const BlockEngageWithMe = () => {
             <div className='group relative'>
               <div className='absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-primary rounded-lg  opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt'></div>
               <a
-                href='#'
+                href='https://www.linkedin.com/in/brettscher'
                 className='relative flex items-center gap-4 px-8 py-6 bg-gray-900 rounded-lg leading-none'
               >
                 <div className='flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 p-0.5 transform group-hover:scale-110 transition-transform duration-200'>

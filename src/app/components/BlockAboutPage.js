@@ -40,7 +40,7 @@ const BlockAboutPage = () => {
               {/* Main Image */}
               <div className='relative min-h-full  w-full rounded-3xl overflow-hidden border border-gray-800'>
                 <Image
-                  src='/about-c.jpeg'
+                  src='/about.jpeg'
                   alt='Professional Portrait'
                   width={800}
                   height={800}

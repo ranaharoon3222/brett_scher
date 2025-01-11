@@ -35,7 +35,7 @@ const BlockAbout = () => {
       {/* Content Container */}
       <div className='relative z-10 pt-0 top-0 md:-top-10 '>
         {/* About Section */}
-        <div className='container mx-auto px-4 py-20 pb-10 md:pb-36 text-center'>
+        {/* <div className='container mx-auto px-4 py-20 pb-10 md:pb-36 text-center'>
           <h2 className='text-4xl md:text-5xl font-bold mb-8'>
             About Brett Secher
           </h2>
@@ -49,7 +49,7 @@ const BlockAbout = () => {
           <button className='bg-primary border border-white hover:bg-primary/90 text-white px-8 py-3 rounded-full transition-colors'>
             Read more
           </button>
-        </div>
+        </div> */}
 
         {/* Certified Distribution Section */}
         <Container className='pb-20'>
@@ -65,27 +65,27 @@ const BlockAbout = () => {
                   className='relative -left-5 w-auto'
                 />
                 <p className='text-lg leading-relaxed opacity-90'>
-                  Lorem ipsum dolor sit amet consectetur. Tristique a interdum
-                  nunc pharetra enim. Massa semper feugiat neque sagittis ut in
-                  cursus tellus. ipsum nulla ut dictum phasellus odio fames.
-                  Facilisi odio netus blandit mus tristique donec. Enim risus
-                  pellentesque nulla bibendum.Lorem ipsum dolor sit amet
-                  consectetur. Tristique a interdum nunc pharetra enim. Massa
-                  semper feugiat neque sagittis ut in cursus tellus. ipsum nulla
-                  ut
+                  Certified Distribution is a cutting-edge, new age media
+                  production company based in New York, revolutionizing the way
+                  personal brands and small businesses create, distribute, and
+                  leverage content to stand out in today’s competitive market.
+                  With a commitment to quality, creativity, and results-driven
+                  strategies, CRTFD produces high-performing, visually
+                  captivating, and purpose-driven media that captures attention
+                  and drives growth.
                 </p>
                 <Link
                   href={'/'}
                   className='bg-primary inline-block hover:bg-primary/90 text-white border-white border px-8 py-3 rounded-full transition-colors'
                 >
-                  GET CERTIFIED
+                  GET CRTFD
                 </Link>
               </div>
 
               {/* Right Image */}
               <div className='relative  rounded-3xl overflow-hidden'>
                 <Image
-                  src='/certified.png'
+                  src='/about-me.png'
                   alt='Certified Distribution'
                   width={600}
                   height={600}

@@ -7,28 +7,20 @@ import Container from './Container';
 
 const images = [
   {
-    url: 'https://picsum.photos/800/600?random=1',
+    url: '/a1-compress.jpeg',
     alt: 'Photography passion',
   },
   {
-    url: 'https://picsum.photos/800/600?random=2',
+    url: '/a2-compress.png',
     alt: 'Family time',
   },
   {
-    url: 'https://picsum.photos/800/600?random=3',
+    url: '/a3-compress.jpeg',
     alt: 'Professional portrait',
   },
   {
-    url: 'https://picsum.photos/800/600?random=4',
+    url: '/a4-compress.png',
     alt: 'Sports and activities',
-  },
-  {
-    url: 'https://picsum.photos/800/600?random=5',
-    alt: 'Travel adventures',
-  },
-  {
-    url: 'https://picsum.photos/800/600?random=6',
-    alt: 'Cooking passion',
   },
 ];
 
@@ -76,13 +68,13 @@ const PersonalLife = () => {
         >
           {images.map((image, index) => (
             <SplideSlide key={index} className='py-10'>
-              <div className='aspect-[4/3]  overflow-hidden'>
+              <div className='aspect-[2/3]  overflow-hidden'>
                 <Image
                   src={image.url}
                   alt={image.alt}
                   width={800}
                   height={600}
-                  className='w-full h-full object-cover'
+                  className='w-full h-full object-cover object-center'
                 />
               </div>
             </SplideSlide>

@@ -27,10 +27,10 @@ const BlockHero = () => {
                   className='block  bg-[#1437641A] font-[500] hover:bg-primary hover:text-white transition-all   border border-[#14376480] rounded-full text-primary py-4 px-6 uppercase'
                   href={'/'}
                 >
-                  Im new to Brett
+                  GET TO KNOW BRETT
                 </Link>
                 <Link
-                  href={'/'}
+                  href={'/contact'}
                   className='block hover:bg-black hover:text-white transition-all  bg-[#143764] font-[500]   border border-[#14376480] rounded-full text-[#fff] py-4 px-6 uppercase'
                 >
                   contact Brett

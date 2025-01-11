@@ -18,14 +18,14 @@ export default function Footer() {
             </p>
             <div className='flex gap-4'>
               <a
-                href='#'
+                href='https://www.instagram.com/brettscherlife'
                 className='hover:opacity-80 transition-opacity'
                 aria-label='Follow us on Instagram'
               >
                 <Instagram size={24} />
               </a>
               <a
-                href='#'
+                href='https://www.linkedin.com/in/brettscher'
                 className='hover:opacity-80 transition-opacity'
                 aria-label='Follow us on LinkedIn'
               >

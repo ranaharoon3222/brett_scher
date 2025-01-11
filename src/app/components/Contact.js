@@ -80,13 +80,13 @@ const Contact = () => {
             <div className='pt-8'>
               <div className='flex space-x-6'>
                 <a
-                  href='#'
+                  href='https://www.linkedin.com/in/brettscher'
                   className='text-gray-600 hover:text-primary transition-colors'
                 >
                   <Linkedin className='w-6 h-6' />
                 </a>
                 <a
-                  href='#'
+                  href='https://www.instagram.com/brettscherlife'
                   className='text-gray-600 hover:text-primary transition-colors'
                 >
                   <Instagram className='w-6 h-6' />
