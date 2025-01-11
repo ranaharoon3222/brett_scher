@@ -57,15 +57,12 @@ const BlockAbout = () => {
             <div className='grid md:grid-cols-2 gap-8 items-center pt-16'>
               {/* Left Content */}
               <div className='space-y-6'>
-                <h2 className='text-5xl  md:text-5xl font-bold'>
-                  Certified Distribution
-                </h2>
                 <Image
-                  src='/logo.jpeg'
-                  alt='LIFE Logo'
-                  width={100}
-                  height={40}
-                  className='bg-white max-w-[150px] rounded-full px-10 py-1 w-auto'
+                  src='/certified-logo.png'
+                  alt='certified-logo'
+                  width={300}
+                  height={150}
+                  className='relative -left-5 w-auto'
                 />
                 <p className='text-lg leading-relaxed opacity-90'>
                   Lorem ipsum dolor sit amet consectetur. Tristique a interdum

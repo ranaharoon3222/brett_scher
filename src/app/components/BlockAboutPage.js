@@ -49,19 +49,6 @@ const BlockAboutPage = () => {
                 />
               </div>
 
-              {/* Floating Stats Card */}
-              <div className='absolute -bottom-6 -left-6 bg-gray-900/80 backdrop-blur-xl p-6 rounded-2xl border border-gray-800'>
-                <div className='flex items-center gap-4'>
-                  <div className='h-12 w-12 rounded-full bg-gradient-to-r from-blue-700 to-primary/70 flex items-center justify-center'>
-                    <span className='text-2xl font-bold'>5</span>
-                  </div>
-                  <div>
-                    <p className='text-sm text-gray-400'>Years of</p>
-                    <p className='font-semibold'>Leadership Experience</p>
-                  </div>
-                </div>
-              </div>
-
               {/* Decorative Elements */}
               <div className='absolute -top-6 -right-6 h-24 w-24 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 opacity-20 blur-2xl'></div>
               <div className='absolute top-1/2 -right-12 h-40 w-40 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 blur-3xl'></div>

@@ -9,9 +9,9 @@ export default function Footer() {
       <div className='container mx-auto px-4 py-16'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           {/* Logo and Social Section */}
-          <div className='space-y-6'>
-            <div className='bg-white text-primary px-4 py-2 rounded-md inline-block font-bold text-xl'>
-              <Image src='/logo.jpeg' width={100} height={100} alt='Logo' />
+          <div className='space-y-3'>
+            <div className=' text-primary relative -left-3  py-2  inline-block font-bold text-xl'>
+              <Image src='/blg-logo.png' width={170} height={170} alt='Logo' />
             </div>
             <p className='text-sm opacity-80'>
               Sed ut unde omnis iste natus sit volur antium laudan
