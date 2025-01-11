@@ -73,7 +73,7 @@ const BlockEngageWithMe = () => {
       <div className='relative z-10'>
         <div className='max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8'>
           <div className='text-center mb-16'>
-            <h2 className='text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-normal'>
+            <h2 className='text-5xl md:text-6xl font-extrabold text-white mb-8 tracking-normal'>
               Engage With
               <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary'>
                 Brett Scher
