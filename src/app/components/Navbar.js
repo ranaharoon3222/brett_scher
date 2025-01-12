@@ -51,11 +51,11 @@ const Navbar = () => {
         </div> */}
 
         {/* Mobile CTA Button and Hamburger */}
-        {/* <div className='md:hidden flex items-center space-x-4'>
-          <button className='flex items-center px-3 py-2 text-white bg-primary rounded-md hover:bg-opacity-90'>
+        <div className='md:hidden flex items-center space-x-4'>
+          {/* <button className='flex items-center px-3 py-2 text-white bg-primary rounded-md hover:bg-opacity-90'>
             <Mail className='mr-2 w-5 h-5' />
             Subscribe
-          </button>
+          </button> */}
           <button className='text-gray-700' onClick={() => setIsOpen(!isOpen)}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -72,7 +72,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
-        </div> */}
+        </div>
       </Container>
 
       {/* Mobile Menu Overlay */}
