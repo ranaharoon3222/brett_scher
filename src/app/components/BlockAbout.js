@@ -60,7 +60,7 @@ const BlockAbout = () => {
                 <Image
                   src='/certified-logo.png'
                   alt='certified-logo'
-                  width={300}
+                  width={400}
                   height={150}
                   className='relative mx-auto md:mx-0 md:-left-5 w-auto'
                 />
