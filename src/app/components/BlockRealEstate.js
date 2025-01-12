@@ -39,6 +39,14 @@ const BlockRealEstate = () => {
           </p>
         </div>
 
+        <a
+          target='_blank'
+          className='inline-block   bg-primary font-[500] mt-6 px-10  text-center hover:bg-primary/80 hover:text-white transition-all   border border-white rounded-full text-white py-4  uppercase'
+          href='https://971j2sm5lzf.typeform.com/to/O3pGHv0D'
+        >
+          Let's chat!
+        </a>
+
         {/* Statistics Grid */}
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20 max-w-7xl mx-auto'>
           {data.map((item, index) => (
@@ -54,13 +62,6 @@ const BlockRealEstate = () => {
             </div>
           ))}
         </div>
-        <a
-          target='_blank'
-          className='inline-block   bg-primary font-[500] mt-16 px-10  text-center hover:bg-primary/80 hover:text-white transition-all   border border-white rounded-full text-white py-4  uppercase'
-          href='https://971j2sm5lzf.typeform.com/to/pY9tLdLf?utm_source=website'
-        >
-          Let's chat!
-        </a>
       </div>
     </section>
   );

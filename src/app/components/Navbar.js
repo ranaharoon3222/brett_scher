@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
-              className='text-primary text-lg hover:text-black'
+              className='text-primary text-xl hover:text-black'
             >
               {item.label}
             </Link>
@@ -43,15 +43,15 @@ const Navbar = () => {
         </nav>
 
         {/* CTA Button */}
-        <div className='hidden md:flex'>
+        {/* <div className='hidden md:flex'>
           <button className='flex items-center px-4 py-2 text-white bg-primary rounded-md hover:bg-opacity-90'>
             <Mail className='mr-2 w-5 h-5' />
             Subscribe
           </button>
-        </div>
+        </div> */}
 
         {/* Mobile CTA Button and Hamburger */}
-        <div className='md:hidden flex items-center space-x-4'>
+        {/* <div className='md:hidden flex items-center space-x-4'>
           <button className='flex items-center px-3 py-2 text-white bg-primary rounded-md hover:bg-opacity-90'>
             <Mail className='mr-2 w-5 h-5' />
             Subscribe
@@ -72,7 +72,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
       </Container>
 
       {/* Mobile Menu Overlay */}
