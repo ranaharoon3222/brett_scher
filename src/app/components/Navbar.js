@@ -33,6 +33,7 @@ const Navbar = () => {
         <nav className='hidden md:flex space-x-10'>
           {menuItems.map((item, index) => (
             <Link
+              prefetch={true}
               key={index}
               href={item.href}
               className='text-primary text-xl hover:text-black'
