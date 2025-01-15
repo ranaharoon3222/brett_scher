@@ -59,7 +59,9 @@ const Contact = ({ data, global }) => {
                 </div>
                 <div>
                   <p className='text-sm font-medium text-gray-900'>Email</p>
-                  <p className='text-sm text-gray-600'>{global.email.text}</p>
+                  <p className='text-sm text-gray-600'>
+                    {global.data.email.text}
+                  </p>
                 </div>
               </div>
 
@@ -71,7 +73,9 @@ const Contact = ({ data, global }) => {
                 </div>
                 <div>
                   <p className='text-sm font-medium text-gray-900'>Phone</p>
-                  <p className='text-sm text-gray-600'>{global.phone.text}</p>
+                  <p className='text-sm text-gray-600'>
+                    {global.data.phone.text}
+                  </p>
                 </div>
               </div>
             </div>

@@ -140,6 +140,7 @@ export type GlobalDocument<Lang extends string = string> =
   >;
 
 type PagesDocumentDataSlicesSlice =
+  | BlockContactSlice
   | PersonalLifeSlice
   | AboutBlockSlice
   | EngageWIthMeSlice

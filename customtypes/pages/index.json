@@ -24,6 +24,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "block_contact": {
+              "type": "SharedSlice"
+            },
             "personal_life": {
               "type": "SharedSlice"
             },
