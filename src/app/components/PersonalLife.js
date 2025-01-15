@@ -19,7 +19,7 @@ const BlockPersonalLife = ({ data }) => {
 
           <div className='max-w-4xl mx-auto text-center space-y-6 mb-10'>
             <RichTextComponent
-              content={primary.description}
+              content={primary.text}
               paraClass={'text-lg text-primary leading-relaxed'}
             />
           </div>
