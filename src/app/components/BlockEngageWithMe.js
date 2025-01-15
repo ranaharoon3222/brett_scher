@@ -2,9 +2,12 @@
 
 import { Instagram, Linkedin } from 'lucide-react';
 import { useEffect, useRef } from 'react';
+import RichTextComponent from './RichText';
 
-const BlockEngageWithMe = () => {
+const BlockEngageWithMe = ({ data }) => {
   const canvasRef = useRef(null);
+
+  const primary = data.primary;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -74,14 +77,13 @@ const BlockEngageWithMe = () => {
         <div className='max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8'>
           <div className='text-center mb-16'>
             <h2 className='text-5xl md:text-6xl font-extrabold text-white mb-8 tracking-normal'>
-              Engage with
+              {primary.title_1}
               <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary'>
-                Brett Scher
+                {primary.title_2}
               </span>
             </h2>
             <p className='max-w-2xl mx-auto text-xl text-gray-300'>
-              Follow along the daily journey and gain insight about what goes on
-              behind the scenes!
+              {primary.text}
             </p>
           </div>
 
@@ -91,7 +93,7 @@ const BlockEngageWithMe = () => {
               <div className='absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-300 rounded-lg  opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt'></div>
               <a
                 target='_blank'
-                href='https://www.instagram.com/brettscherlife'
+                href={primary.instagram_link.text}
                 className='relative flex items-center gap-4 px-8 py-6 bg-gray-900 rounded-lg leading-none'
               >
                 <div className='flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 p-0.5 transform group-hover:scale-110 transition-transform duration-200'>
@@ -100,7 +102,7 @@ const BlockEngageWithMe = () => {
                 <div className='flex flex-col items-start'>
                   <span className='text-pink-400 font-medium'>Instagram</span>
                   <span className='text-2xl font-bold text-white'>
-                    @Brettscherlife
+                    {primary.insta_text}
                   </span>
                   {/* <span className='text-gray-400 text-sm'>
                     Join 50K+ followers
@@ -114,7 +116,7 @@ const BlockEngageWithMe = () => {
               <div className='absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-primary rounded-lg  opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt'></div>
               <a
                 target='_blank'
-                href='https://www.linkedin.com/in/brettscher'
+                href={primary.linkedin_link.text}
                 className='relative flex items-center gap-4 px-8 py-6 bg-gray-900 rounded-lg leading-none'
               >
                 <div className='flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 p-0.5 transform group-hover:scale-110 transition-transform duration-200'>
@@ -123,7 +125,7 @@ const BlockEngageWithMe = () => {
                 <div className='flex flex-col items-start'>
                   <span className='text-blue-400 font-medium'>LinkedIn</span>
                   <span className='text-2xl font-bold text-white'>
-                    Brett Scher
+                    {primary.linked_in_text}
                   </span>
                 </div>
               </a>

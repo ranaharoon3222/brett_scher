@@ -6,39 +6,14 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import Container from './Container';
 
-const testimonials = [
-  {
-    name: 'Ryan Reynolds',
-    subtitle: 'Lorem ipsum dolor sit amer.',
-    text: 'Lorem ipsum dolor sit amet consectetur. Tristique a interdum nunc pharetra enim. Massa semper feugiat neque sagittis ut in cursus tellus. ipsum nulla ut dictum phasellus odio fames',
-    image: '/testi.png',
-  },
-  {
-    name: 'Ryan Reynolds',
-    subtitle: 'Lorem ipsum dolor sit amer.',
-    text: 'Lorem ipsum dolor sit amet consectetur. Tristique a interdum nunc pharetra enim. Massa semper feugiat neque sagittis ut in cursus tellus. ipsum nulla ut dictum phasellus odio fames',
-    image: '/testi.png',
-  },
-  {
-    name: 'Rob Wilson',
-    subtitle: 'Lorem ipsum dolor sit amer.',
-    text: 'Lorem ipsum dolor sit amet consectetur. Tristique a interdum nunc pharetra enim. Massa semper feugiat neque sagittis ut in cursus tellus. ipsum nulla ut dictum phasellus odio fames',
-    image: '/testi.png',
-  },
-  {
-    name: 'Ryan Reynolds',
-    subtitle: 'Lorem ipsum dolor sit amer.',
-    text: 'Lorem ipsum dolor sit amet consectetur. Tristique a interdum nunc pharetra enim. Massa semper feugiat neque sagittis ut in cursus tellus. ipsum nulla ut dictum phasellus odio fames',
-    image: '/testi.png',
-  },
-];
+const BlockTestimonials = ({ data }) => {
+  const primary = data.primary;
 
-const BlockTestimonials = () => {
   return (
     <section className='bg-gray-50 py-20'>
       <Container className='space-y-10'>
         <h2 className='text-primary text-4xl md:text-5xl font-bold text-center mb-16'>
-          TESTIMONIALS
+          {primary.title}
         </h2>
 
         <Splide
@@ -59,14 +34,14 @@ const BlockTestimonials = () => {
           }}
           aria-label='Testimonials'
         >
-          {testimonials.map((testimonial, index) => (
+          {primary.testimonials.map((testimonial, index) => (
             <SplideSlide key={index} className='py-10'>
               <div className='bg-white rounded-2xl shadow-md p-8 relative mt-12'>
                 <div className='absolute -top-12 left-1/2 -translate-x-1/2'>
                   <div className='w-24 h-24 rounded-full border-2 border-primary overflow-hidden'>
                     <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
+                      src={testimonial.image.url}
+                      alt={testimonial.title}
                       width={96}
                       height={96}
                       className='w-full h-full object-cover'
@@ -76,14 +51,14 @@ const BlockTestimonials = () => {
 
                 <div className='text-center pt-12 space-y-4'>
                   <h3 className='text-xl font-semibold text-gray-900'>
-                    {testimonial.name}
+                    {testimonial.title}
                   </h3>
-                  <p className='text-gray-600'>{testimonial.subtitle}</p>
+                  <p className='text-gray-600'>{testimonial.position}</p>
                   <div className='flex justify-center text-primary'>
                     <Quote size={24} />
                   </div>
                   <p className='text-gray-600 leading-relaxed'>
-                    {testimonial.text}
+                    {testimonial.content}
                   </p>
                 </div>
               </div>

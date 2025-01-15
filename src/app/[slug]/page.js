@@ -1,11 +1,14 @@
 import React from 'react';
+
 import { createClient } from '@/prismicio';
 import SwitchComponent from '@/app/components/SwitchComponent';
+import { notFound } from 'next/navigation';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
   const client = createClient();
 
-  const page = await client.getByUID('pages', 'home');
+  const page = await client.getByUID('pages', slug);
   const data = page.data;
 
   return {
@@ -33,11 +36,20 @@ export async function generateMetadata() {
     },
   };
 }
-const Home = async () => {
+
+const Home = async ({ params }) => {
   const client = createClient();
 
-  const page = await client.getByUID('pages', 'home');
-  console.log(page);
+  const { slug } = await params;
+  console.log(slug);
+
+  const page = await client.getByUID('pages', slug);
+
+  if (!page) {
+    return notFound();
+  }
+
+  console.log(page.data.slices);
 
   return <SwitchComponent page={page} />;
 };

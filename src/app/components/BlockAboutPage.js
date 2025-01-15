@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import Container from './Container';
+import RichTextComponent from './RichText';
 
-const BlockAboutPage = () => {
+const BlockAboutPage = ({ data }) => {
+  const primary = data.primary;
+
   return (
     <section className='relative  text-white overflow-hidden'>
       <Container className='  md:py-20 py-10'>
@@ -9,25 +12,14 @@ const BlockAboutPage = () => {
           {/* Left Content */}
           <div className='space-y-8 md:col-span-7 '>
             <h1 className='text-3xl text-primary md:text-5xl  font-bold leading-tight'>
-              Brett Scher is a founder, entrepreneur, insurance strategist,
-              media producer, and the Owner/CEO of Life with Brett Scher and
-              Certified Distribution.
+              {primary.title}
             </h1>
-            <p className='text-lg md:text-xl text-black leading-relaxed max-w-2xl'>
-              In 2024, in his first year, Brett has already helped hundreds of
-              individuals secure life insurance and supported both small and
-              large businesses with comprehensive employee benefits packages. At
-              the same time, Brett leads his media agency, Certified
-              Distribution, where he creates impactful marketing content for
-              businesses across the Tri-State area.
-            </p>
-            <p className='text-lg md:text-xl text-black leading-relaxed max-w-2xl'>
-              With innovative strategies and new-age marketing ideas, Certified
-              Distribution builds powerful digital platforms that amplify brand
-              visibility and drive real results. The agency has quickly captured
-              the attention of businesses across New York, eager to leverage
-              Brett’s cutting-edge media strategies.
-            </p>
+            <RichTextComponent
+              content={primary.text}
+              paraClass={
+                'text-lg md:text-xl text-black leading-relaxed max-w-2xl'
+              }
+            />
           </div>
 
           {/* Right Content - Image */}
@@ -40,7 +32,7 @@ const BlockAboutPage = () => {
               {/* Main Image */}
               <div className='relative min-h-full  w-full rounded-3xl overflow-hidden border border-gray-800'>
                 <Image
-                  src='/about.jpeg'
+                  src={primary.image.url}
                   alt='Professional Portrait'
                   width={800}
                   height={800}

@@ -1,0 +1,83 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "could",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "personal",
+				"type": "Text"
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+					"width": 3456,
+					"height": 3456
+				},
+				"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+				"width": 3456,
+				"height": 3456,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_link": {
+				"key": "8d8214b6-3ccf-4ff3-8450-d16f61c2fcf7",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"text": "nervous"
+				}
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "drink",
+				"type": "Text"
+			},
+			"button_text_2": {
+				"__TYPE__": "FieldContent",
+				"value": "up",
+				"type": "Text"
+			},
+			"button_link_2": {
+				"key": "43daadfb-117d-4fce-ae6c-4ce31e1971c8",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"text": "town"
+				}
+			},
+			"title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "spider",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

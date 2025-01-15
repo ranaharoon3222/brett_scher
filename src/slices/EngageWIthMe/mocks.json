@@ -1,0 +1,60 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title_1": {
+				"__TYPE__": "FieldContent",
+				"value": "lady",
+				"type": "Text"
+			},
+			"title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "gently",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "high",
+				"type": "Text"
+			},
+			"instagram_link": {
+				"key": "d7f659ef-be2a-4bbc-a43c-45954f969e2b",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"text": "time"
+				}
+			},
+			"linkedin_link": {
+				"key": "4bd40c0f-2513-4569-815d-26d7f14f1b78",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"text": "brave"
+				}
+			},
+			"insta_text": {
+				"__TYPE__": "FieldContent",
+				"value": "poem",
+				"type": "Text"
+			},
+			"linked_in_text": {
+				"__TYPE__": "FieldContent",
+				"value": "does",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

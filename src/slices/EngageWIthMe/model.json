@@ -1,0 +1,74 @@
+{
+  "id": "engage_w_ith_me",
+  "type": "SharedSlice",
+  "name": "EngageWIthMe",
+  "description": "EngageWIthMe",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title_1": {
+          "type": "Text",
+          "config": {
+            "label": "title 1",
+            "placeholder": ""
+          }
+        },
+        "title_2": {
+          "type": "Text",
+          "config": {
+            "label": "title 2",
+            "placeholder": ""
+          }
+        },
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "text",
+            "placeholder": ""
+          }
+        },
+        "insta_text": {
+          "type": "Text",
+          "config": {
+            "label": "insta text",
+            "placeholder": ""
+          }
+        },
+        "instagram_link": {
+          "type": "Link",
+          "config": {
+            "label": "instagram link",
+            "placeholder": "",
+            "select": "media",
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "linked_in_text": {
+          "type": "Text",
+          "config": {
+            "label": "linked in text",
+            "placeholder": ""
+          }
+        },
+        "linkedin_link": {
+          "type": "Link",
+          "config": {
+            "label": "linkedin link",
+            "placeholder": "",
+            "select": "media",
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
