@@ -6,8 +6,9 @@ import BlockAbout from '@/app/components/BlockAbout';
 import BlockTestimonials from '@/app/components/BlockTestimonials';
 import BlockAboutPage from './BlockAboutPage';
 import PersonalLife from './PersonalLife';
+import Contact from './Contact';
 
-const SwitchComponent = ({ page }) => {
+const SwitchComponent = ({ page, global }) => {
   return (
     <div>
       {page.data.slices.map((slice) => {
@@ -26,6 +27,8 @@ const SwitchComponent = ({ page }) => {
             return <BlockAboutPage key={slice.id} data={slice} />;
           case 'personal_life':
             return <PersonalLife key={slice.id} data={slice} />;
+          case 'block_contact':
+            return <Contact global={global} key={slice.id} data={slice} />;
           default:
             return null;
         }

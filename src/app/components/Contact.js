@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import { Mail, Phone, Send, Linkedin, Instagram } from 'lucide-react';
 
-const Contact = () => {
+const Contact = ({ data, global }) => {
+  const primary = data.primary;
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -43,12 +44,10 @@ const Contact = () => {
           <div className='space-y-8'>
             <div>
               <h1 className='text-4xl font-bold text-gray-900 mb-2'>
-                Get in Touch
+                {primary.title}
               </h1>
               <div className='w-20 h-1 bg-primary rounded'></div>
-              <p className='mt-4 text-lg text-gray-600'>
-                Have a question or want to work together? Drop us a message!
-              </p>
+              <p className='mt-4 text-lg text-gray-600'>{primary.text}</p>
             </div>
 
             <div className='space-y-6'>
@@ -60,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className='text-sm font-medium text-gray-900'>Email</p>
-                  <p className='text-sm text-gray-600'>me@brettscher.com</p>
+                  <p className='text-sm text-gray-600'>{global.email.text}</p>
                 </div>
               </div>
 
@@ -72,7 +71,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className='text-sm font-medium text-gray-900'>Phone</p>
-                  <p className='text-sm text-gray-600'>631-704-3993</p>
+                  <p className='text-sm text-gray-600'>{global.phone.text}</p>
                 </div>
               </div>
             </div>

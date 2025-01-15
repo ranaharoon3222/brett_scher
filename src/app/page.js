@@ -37,8 +37,9 @@ const Home = async () => {
   const client = createClient();
 
   const page = await client.getByUID('pages', 'home');
+  const global = await client.getSingle('global');
 
-  return <SwitchComponent page={page} />;
+  return <SwitchComponent page={page} global={global} />;
 };
 
 export default Home;

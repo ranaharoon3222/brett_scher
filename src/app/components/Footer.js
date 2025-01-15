@@ -27,7 +27,7 @@ export default async function Footer() {
     terms_of_use,
     privacy_policy,
     menu,
-    footer_logo,
+    logo_footer,
   } = global.data;
 
   const currentYear = new Date().getFullYear();
@@ -40,7 +40,7 @@ export default async function Footer() {
           <div className='space-y-3'>
             <div className=' text-primary relative -left-3  py-2  inline-block font-bold text-xl'>
               <Image
-                src={footer_logo.url}
+                src={logo_footer.url}
                 width={170}
                 height={170}
                 alt='Logo'

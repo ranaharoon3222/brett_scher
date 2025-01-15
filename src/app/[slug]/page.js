@@ -41,9 +41,9 @@ const Home = async ({ params }) => {
   const client = createClient();
 
   const { slug } = await params;
-  console.log(slug);
 
   const page = await client.getByUID('pages', slug);
+  const global = await client.getSingle('global');
 
   if (!page) {
     return notFound();
@@ -51,7 +51,7 @@ const Home = async ({ params }) => {
 
   console.log(page.data.slices);
 
-  return <SwitchComponent page={page} />;
+  return <SwitchComponent page={page} global={global} />;
 };
 
 export default Home;

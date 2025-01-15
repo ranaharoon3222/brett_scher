@@ -312,6 +312,61 @@ export type AboutBlockSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *BlockContact → Default → Primary*
+ */
+export interface BlockContactSliceDefaultPrimary {
+  /**
+   * title field in *BlockContact → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: block_contact.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * text field in *BlockContact → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: block_contact.default.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for BlockContact Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BlockContactSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BlockContactSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *BlockContact*
+ */
+type BlockContactSliceVariation = BlockContactSliceDefault;
+
+/**
+ * BlockContact Shared Slice
+ *
+ * - **API ID**: `block_contact`
+ * - **Description**: BlockContact
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BlockContactSlice = prismic.SharedSlice<
+  "block_contact",
+  BlockContactSliceVariation
+>;
+
+/**
  * Primary content in *CertifiedDistribution → Default → Primary*
  */
 export interface CertifiedDistributionSliceDefaultPrimary {
@@ -942,6 +997,10 @@ declare module "@prismicio/client" {
       AboutBlockSliceDefaultPrimary,
       AboutBlockSliceVariation,
       AboutBlockSliceDefault,
+      BlockContactSlice,
+      BlockContactSliceDefaultPrimary,
+      BlockContactSliceVariation,
+      BlockContactSliceDefault,
       CertifiedDistributionSlice,
       CertifiedDistributionSliceDefaultPrimary,
       CertifiedDistributionSliceVariation,
