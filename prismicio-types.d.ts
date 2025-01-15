@@ -4,6 +4,141 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+/**
+ * Item in *Global → menu*
+ */
+export interface GlobalDocumentDataMenuItem {
+  /**
+   * link field in *Global → menu*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.menu[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+}
+
+/**
+ * Content for Global documents
+ */
+interface GlobalDocumentData {
+  /**
+   * logo field in *Global*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.logo
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo: prismic.ImageField<never>;
+
+  /**
+   * logo footer field in *Global*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.logo_footer
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo_footer: prismic.ImageField<never>;
+
+  /**
+   * email field in *Global*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.email
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  email: prismic.LinkField;
+
+  /**
+   * phone field in *Global*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.phone
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  phone: prismic.LinkField;
+
+  /**
+   * instagram field in *Global*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.instagram
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  instagram: prismic.LinkField;
+
+  /**
+   * linkedin field in *Global*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.linkedin
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  linkedin: prismic.LinkField;
+
+  /**
+   * privacy policy field in *Global*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.privacy_policy
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  privacy_policy: prismic.LinkField;
+
+  /**
+   * terms of use field in *Global*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.terms_of_use
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  terms_of_use: prismic.LinkField;
+
+  /**
+   * menu field in *Global*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global.menu[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  menu: prismic.GroupField<Simplify<GlobalDocumentDataMenuItem>>;
+}
+
+/**
+ * Global document from Prismic
+ *
+ * - **API ID**: `global`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type GlobalDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<GlobalDocumentData>,
+    "global",
+    Lang
+  >;
+
 type PagesDocumentDataSlicesSlice =
   | PersonalLifeSlice
   | AboutBlockSlice
@@ -109,7 +244,7 @@ interface PagesDocumentData {
 export type PagesDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PagesDocumentData>, "pages", Lang>;
 
-export type AllDocumentTypes = PagesDocument;
+export type AllDocumentTypes = GlobalDocument | PagesDocument;
 
 /**
  * Primary content in *AboutBlock → Default → Primary*
@@ -795,6 +930,9 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
+      GlobalDocument,
+      GlobalDocumentData,
+      GlobalDocumentDataMenuItem,
       PagesDocument,
       PagesDocumentData,
       PagesDocumentDataSlicesSlice,

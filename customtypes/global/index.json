@@ -1,0 +1,113 @@
+{
+  "format": "custom",
+  "id": "global",
+  "label": "Global",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logo_footer": {
+        "type": "Image",
+        "config": {
+          "label": "logo footer",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "email": {
+        "type": "Link",
+        "config": {
+          "label": "email",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "phone": {
+        "type": "Link",
+        "config": {
+          "label": "phone",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "instagram": {
+        "type": "Link",
+        "config": {
+          "label": "instagram",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "linkedin": {
+        "type": "Link",
+        "config": {
+          "label": "linkedin",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "privacy_policy": {
+        "type": "Link",
+        "config": {
+          "label": "privacy policy",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "terms_of_use": {
+        "type": "Link",
+        "config": {
+          "label": "terms of use",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "menu": {
+        "type": "Group",
+        "config": {
+          "label": "menu",
+          "repeat": true,
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "link",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

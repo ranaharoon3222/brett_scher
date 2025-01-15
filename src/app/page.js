@@ -37,7 +37,6 @@ const Home = async () => {
   const client = createClient();
 
   const page = await client.getByUID('pages', 'home');
-  console.log(page);
 
   return <SwitchComponent page={page} />;
 };
